@@ -1,0 +1,151 @@
+/* טיפוגרפיה בסיסית (אפשר להחליף לגופן אחר) */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap');
+
+:root{
+  --bg: #0e0f14;
+  --fg: #e9ecf1;
+  --muted: #a6adbb;
+  --card: rgba(255,255,255,0.06);
+  --stroke: rgba(255,255,255,0.14);
+  --accent: #22c55e; /* ירוק עדין */
+  --accent-2: #0ea5e9; /* תכלת */
+  --whatsapp: #25D366;
+}
+
+*{box-sizing:border-box}
+html,body,#root{height:100%}
+body{
+  margin:0;
+  font-family:"Heebo", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.container{
+  width: min(1100px, 92%);
+  margin-inline: auto;
+}
+
+.Home{
+  position:relative;
+  overflow:hidden;
+}
+
+/* רקע גרדיאנט רך */
+.bg-gradient{
+  position:absolute; inset:-30% -20% auto -20%;
+  height:70vh;
+  background:
+    radial-gradient(60% 40% at 70% 10%, rgba(14,165,233,0.35), transparent 60%),
+    radial-gradient(50% 50% at 20% 0%, rgba(34,197,94,0.30), transparent 60%);
+  filter: blur(35px);
+  pointer-events:none;
+}
+
+.hero{
+  padding: clamp(2rem, 5vw, 4rem) 0 1rem;
+  display:grid;
+  gap:1.25rem;
+  text-align:center;
+}
+
+.brand .logo{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:54px; height:54px;
+  background: var(--card);
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  color: var(--accent-2);
+  margin-bottom:.75rem;
+}
+
+.hero h1{
+  margin:0 0 .5rem;
+  font-weight:800;
+  font-size: clamp(1.7rem, 3.2vw, 2.4rem);
+  letter-spacing:.2px;
+}
+
+.hero .subtitle{
+  margin:0 auto;
+  color: var(--muted);
+  max-width: 55ch;
+  line-height:1.7;
+  font-size: clamp(1rem, 1.3vw, 1.06rem);
+}
+
+.cta-group{
+  display:flex; justify-content:center; gap:.75rem;
+  flex-wrap:wrap; margin-top:1rem;
+}
+
+.btn{
+  display:inline-flex; align-items:center; gap:.5rem;
+  padding:.85rem 1.1rem;
+  border-radius:14px;
+  border:1px solid var(--stroke);
+  background: var(--card);
+  color: var(--fg);
+  text-decoration:none;
+  font-weight:600;
+  transition: transform .15s ease, background .2s ease, border-color .2s ease;
+  backdrop-filter:saturate(120%) blur(4px);
+}
+.btn svg{ margin-inline-start:.1rem }
+.btn:hover{ transform: translateY(-2px); border-color: rgba(255,255,255,0.28) }
+
+.btn-whatsapp{ background: linear-gradient(180deg, rgba(37,211,102,.18), rgba(37,211,102,.08)); color:#eafff0; }
+.btn-whatsapp:hover{ background: linear-gradient(180deg, rgba(37,211,102,.28), rgba(37,211,102,.14)); }
+
+.btn-call{ background: linear-gradient(180deg, rgba(14,165,233,.18), rgba(14,165,233,.08)); }
+.btn-call:hover{ background: linear-gradient(180deg, rgba(14,165,233,.28), rgba(14,165,233,.14)); }
+
+.contact-strip{
+  margin-top: .75rem;
+  display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;
+  color: var(--muted);
+  font-size:.98rem;
+}
+.contact-item{ display:flex; align-items:center; gap:.4rem; }
+.contact-item a{ color: var(--fg); text-decoration:none; border-bottom:1px dashed transparent }
+.contact-item a:hover{ border-bottom-color: var(--fg) }
+.contact-icon{ opacity:.9 }
+
+.features{
+  padding: 1.25rem 0 2.5rem;
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: .9rem;
+}
+
+@media (min-width: 700px){
+  .features{ grid-template-columns: repeat(2,1fr); }
+}
+@media (min-width: 1000px){
+  .features{ grid-template-columns: repeat(4,1fr); }
+}
+
+.feature-card{
+  background: var(--card);
+  border:1px solid var(--stroke);
+  border-radius:18px;
+  padding:1rem;
+  min-height: 150px;
+  display:flex; flex-direction:column; gap:.4rem; align-items:flex-start;
+}
+.feature-card svg{ color: var(--accent-2) }
+.feature-card h3{ margin:.2rem 0; font-size:1.1rem }
+.feature-card p{ margin:0; color: var(--muted) }
+
+.footer{
+  border-top:1px solid var(--stroke);
+  padding:1.5rem 0 3rem;
+  text-align:center;
+  color: var(--muted);
+}
+.cta-inline{
+  display:flex; gap:.6rem; justify-content:center; align-items:center; margin-top:.35rem;
+}
+.cta-inline a{ color: var(--fg); text-decoration:none; font-weight:600 }
+.cta-inline a:hover{ text-decoration:underline }
+.dot{ width:5px;height:5px;border-radius:50%;background:var(--stroke);display:inline-block }
