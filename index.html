@@ -31,23 +31,24 @@
 
   <!-- Structured Data (JSON-LD) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "TaxiService",
-    "name": "הדריווערים (הדרייבערים)",
-    "url": "https://quiet-piroshki-dec991.netlify.app/",
-    "areaServed": { "@type": "Country", "name": "IL" },
-    "serviceArea": "IL",
-    "telephone": "+972-53-412-8066",
-    "description": "דרייברים – משלוחים ונסיעות בכל הארץ 24/6. שליחויות אקספרס, הסעות לנתב\"ג ושירות מוניות.",
-    "availableLanguage": ["he", "en"],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "telephone": "+972-50-413-5930"
-    }
-  }
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "האם אתם מבצעים משלוחים בכל הארץ?",
+    "acceptedAnswer": {"@type":"Answer","text":"כן. דרייברים למשלוחים ונסיעות בפריסה ארצית 24/6."}
+  },{
+    "@type": "Question",
+    "name": "איך מזמינים נסיעה או משלוח?",
+    "acceptedAnswer": {"@type":"Answer","text":"שולחים הודעת וואטסאפ ל־050-413-5930 או מחייגים 053-412-8066."}
+  },{
+    "@type": "Question",
+    "name": "מה לגבי מחירים?",
+    "acceptedAnswer": {"@type":"Answer","text":"מודל שיתופי: התשלום לכיסוי דלק והוצאות שוטפות – מחירים הוגנים."}
+  }]
+}
+</script>
 
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 </head>
