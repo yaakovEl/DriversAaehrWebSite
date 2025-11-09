@@ -51,7 +51,7 @@ export default function Home() {
           </div>
           <div className="contact-item">
             <span className="contact-icon" aria-hidden="true">💬</span>
-            <span>וואטסאפ לבעל המונית: <a href={whatsappLink} target="_blank" rel="noreferrer">050-413-5930</a></span>
+            <span>וואטסאפ לבעל המונית: <a href={whatsappLink} target="_blank" rel="noreferrer">052-743-5717</a></span>
           </div>
         </div>
       </header>
