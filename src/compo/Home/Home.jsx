@@ -1,7 +1,7 @@
 import "./Home.css";
 
 export default function Home() {
-  const whatsappNumber = "972504135930"; // 050-413-5930 בפורמט בינלאומי בלי 0
+  const whatsappNumber = "972527435717"; // 052-743-5717 בפורמט בינלאומי בלי 0
   const whatsappText = encodeURIComponent("שלום, אשמח להזמין נסיעה/משלוח.");
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappText}`;
 
@@ -22,7 +22,7 @@ export default function Home() {
           <h1>דרייברים – משלוחים ונסיעות לכל הארץ 24/6</h1>
           <p className="subtitle">
             שירות מוניות ושליחויות אקספרס, כולל נסיעות לנתב״ג. הזמנה בוואטסאפ
-            050-413-5930 או חיוג 052-743-5717.
+           052-743-5717 חיוג.
           </p>
         </div>
 
@@ -35,7 +35,7 @@ export default function Home() {
             שלחו וואטסאפ
           </a>
 
-          <a className="btn btn-call" href="tel:0534128066">
+          <a className="btn btn-call" href="tel:0527435717">
             {/* אייקון טלפון */}
             <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
               <path d="M6.6 10.8c1.2 2.4 3.1 4.3 5.5 5.5l1.8-1.8c.3-.3.8-.4 1.2-.3 1 .3 2 .4 3.1.4.7 0 1.3.6 1.3 1.3V20c0 .7-.6 1.3-1.3 1.3C9.9 21.3 2.7 14.1 2.7 4.3 2.7 3.6 3.3 3 4 3h3.1c.7 0 1.3.6 1.3 1.3 0 1 .1 2.1.4 3.1.1.4 0 .9-.3 1.2ל-1.9 2.2z" />
@@ -47,7 +47,7 @@ export default function Home() {
         <div className="contact-strip">
           <div className="contact-item">
             <span className="contact-icon" aria-hidden="true">📞</span>
-            <span>לשירות מהיר: <a href="tel:0534128066">053-412-8066</a></span>
+            <span>לשירות מהיר: <a href="tel:0527435717">052-743-5717</a></span>
           </div>
           <div className="contact-item">
             <span className="contact-icon" aria-hidden="true">💬</span>
@@ -101,7 +101,7 @@ export default function Home() {
             וואטסאפ
           </a>
           <span className="dot" />
-          <a className="link-call" href="tel:0534128066">חיוג</a>
+          <a className="link-call" href="tel:0527435717">חיוג</a>
         </div>
       </footer>
     </main>
